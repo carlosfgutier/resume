@@ -1,0 +1,60 @@
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 2rem;
+};
+
+#page {
+    width: 60vw;
+    margin: 30px auto 30px auto;
+    padding: 30px;
+    border-radius: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        line-height: 24px;
+        width: 50%;
+    }
+}
+
+.summary {
+    &__title2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    &__paragraph {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        line-height: 24px;
+    }
+}
+
+.experience {
+    &__title2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    &__title3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    &__title4 {
+
+    }
+}
