@@ -39,6 +39,14 @@
   line-height: 24px;
 }
 
+.space-around {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .header__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,21 +66,24 @@
 .summary__prompt {
   font-size: 0.8rem;
   color: #878991;
-  width: 100%;
+  width: auto;
   margin: auto;
   text-align: center;
 }
 
 .summary__prompt:hover {
+  color: #ff5050;
   text-decoration: underline;
   cursor: pointer;
 }
 
+.summary__prompt:active {
+  color: #ffc7c7;
+}
+
 .experience__list {
   text-indent: -20px;
-  /* key property */
   margin-left: 20px;
-  /* key property */
 }
 
 .experience__item {
@@ -80,5 +91,109 @@
   font-size: 1rem;
   line-height: 24px;
   list-style-position: inside;
+}
+
+#sideMenu {
+  width: 12vw;
+  padding: 0 1rem 1rem 1rem;
+  border-radius: 15px;
+  position: fixed;
+  top: 30px;
+  left: 5px;
+}
+
+.nav {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.nav__link {
+  font-weight: bold;
+  color: #111925;
+  width: auto;
+  margin: auto;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.nav__link:hover {
+  color: #ff5050;
+}
+
+.nav__link:active {
+  color: #ffc7c7;
+}
+
+.search {
+  width: 100%;
+}
+
+.search__container {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.search__title {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.search__title:hover {
+  color: #ff5050;
+}
+
+.search__title:active {
+  color: #ffc7c7;
+}
+
+.search__textarea {
+  font-size: 1rem;
+  line-height: 24px;
+  resize: none;
+  width: 94%;
+  height: 100px;
+  padding: 2%;
+  border-width: 2px;
+  border-color: #ff5050;
+  border-radius: 15px;
+}
+
+.search__button {
+  color: white;
+  background-color: #fd7474;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.search__button:hover {
+  background-color: #ffc7c7;
+}
+
+.search__button:active {
+  color: #ff5050;
+}
+
+.search__hidden {
+  visibility: hidden;
+}
+
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 40vw;
+  margin: 10px auto;
+}
+
+.footer__text {
+  font-size: 0.8rem;
+  color: #878991;
+}
+
+.footer__span {
+  color: #ff5050;
 }
 /*# sourceMappingURL=style.css.map */
