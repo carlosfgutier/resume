@@ -55,6 +55,19 @@
   width: 50%;
 }
 
+.summary__prompt {
+  font-size: 0.8rem;
+  color: #878991;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.summary__prompt:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .experience__list {
   text-indent: -20px;
   /* key property */
