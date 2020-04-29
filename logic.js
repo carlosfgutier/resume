@@ -19,4 +19,5 @@ $("#skillsLink").click(function() {
 
 //copy template HTML template
 
+
 //search function and provide match score
