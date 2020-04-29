@@ -43,6 +43,29 @@
     justify-content: space-around;
 }
 
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    color: rgb(17, 52, 67);
+    text-decoration: underline;
+
+    &:hover {
+        color: rgb(255, 80, 80);
+        cursor: pointer;
+    }
+
+    &:active {
+        color: rgb(255, 199, 199);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
 .header {
     &__row{
         display: flex;
@@ -60,20 +83,20 @@
 .summary {
     &__prompt {
         font-size: 0.8rem;
-        color: rgb(135, 137, 145);
         width: auto;
         margin: auto;
         text-align: center;
+    }
+}
 
-        &:hover {
-            color: rgb(255, 80, 80);
-            text-decoration: underline;
-            cursor: pointer;
-        }
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
 
-        &:active {
-            color: rgb(255, 199, 199);
-        }
+    &__single {
+        border-color: black;
+        padding: 1em;
     }
 }
 
@@ -110,21 +133,8 @@
 
     &__link {
         font-weight: bold;
-        color: rgb(17, 25, 37);
-
         width: auto;
         margin: auto;
-
-        text-decoration: underline;
-        cursor: pointer;
-
-        &:hover {
-            color: rgb(255, 80, 80);
-        }
-
-        &:active {
-            color: rgb(255, 199, 199);
-        }
     }
 }
 
@@ -137,19 +147,6 @@
 
         width: 100%;
         margin: 20px auto;
-    }
-
-    &__title {
-        cursor: pointer;
-        text-decoration: underline;
-
-        &:hover {
-            color: rgb(255, 80, 80);
-        } 
-
-        &:active {
-            color: rgb(255, 199, 199);
-        }
     }
 
     &__textarea {
@@ -179,10 +176,6 @@
         &:active {
             color: rgb(255, 80, 80);
         }
-    }
-
-    &__hidden {
-        visibility: hidden;
     }
 }
 
