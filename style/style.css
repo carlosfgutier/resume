@@ -1,4 +1,5 @@
 #page {
+  color: #113443;
   width: 64vw;
   margin: 30px auto 30px auto;
   padding: 30px;
@@ -70,17 +71,11 @@
   color: #ffc7c7;
 }
 
-.hidden {
-  display: none;
-}
-
 .header__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .header__info {
@@ -196,5 +191,9 @@
 
 .footer__span {
   color: #ff5050;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

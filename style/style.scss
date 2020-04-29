@@ -1,7 +1,10 @@
 #page {
+    color: rgb(17, 52, 67);
+
     width: 64vw;
     margin: 30px auto 30px auto;
     padding: 30px;
+
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -62,14 +65,10 @@
     }
 }
 
-.hidden {
-    display: none;
-}
-
 .header {
     &__row{
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     &__info {
@@ -194,4 +193,8 @@
     &__span {
         color: rgb(255, 80, 80);
     }
+
+}//------------------
+.hidden {
+    display: none;
 }
