@@ -1,5 +1,22 @@
-//ALERT "I know this isn't pretty, but that HTML though. *This is me inviting you to inspect this page* :)"
+//hide and show sections
+$("#searchLink").click(function() {
+    if ($("#searchUI").hasClass('hidden')) {
+        $("#searchUI").removeClass('hidden');
+        console.log($("#searchUI").classList);
+    } else {
+        $("#searchUI").addClass('hidden');
+    };
+});
 
-// add option to copy template HTML template
+$("#skillsLink").click(function() {
+    if ($("#skillsGrid").hasClass('hidden')) {
+        $("#skillsGrid").removeClass('hidden');
+        console.log($("#searchUI").classList);
+    } else {
+        $("#skillsGrid").addClass('hidden');
+    };
+});
 
-//clean css by making hover and active classes for link instead of using the same css for all
+//copy template HTML template
+
+//search function and provide match score
